@@ -1,0 +1,17 @@
+group 'appScrapper'
+version '1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.google.guava:guava:19.0'
+}
